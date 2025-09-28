@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Products;
+namespace App\Filament\Clusters\Shop\Resources\Products;
 
 use UnitEnum;
 use BackedEnum;
@@ -11,14 +11,15 @@ use Filament\Resources\Resource;
 use Filament\Support\Icons\Heroicon;
 use App\Filament\Clusters\Shop\ShopCluster;
 use Filament\Pages\Enums\SubNavigationPosition;
-use App\Filament\Resources\Products\Pages\EditProduct;
-use App\Filament\Resources\Products\Pages\ViewProduct;
-use App\Filament\Resources\Products\Pages\ListProducts;
-use App\Filament\Resources\Products\Pages\CreateProduct;
-use App\Filament\Resources\Products\Pages\DetailProduct;
 use App\Filament\Resources\Products\Schemas\ProductForm;
 use App\Filament\Resources\Products\Tables\ProductsTable;
 use App\Filament\Resources\Products\Schemas\ProductInfolist;
+use App\Filament\Clusters\Shop\Resources\Products\Pages\EditProduct;
+use App\Filament\Clusters\Shop\Resources\Products\Pages\ViewProduct;
+use App\Filament\Clusters\Shop\Resources\Products\Pages\ListProducts;
+use App\Filament\Clusters\Shop\Resources\Products\Pages\CreateProduct;
+use App\Filament\Clusters\Shop\Resources\Products\Pages\DetailProduct;
+
 
 class ProductResource extends Resource
 {

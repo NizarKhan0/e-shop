@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Categories\Tables;
+namespace App\Filament\Clusters\Shop\Resources\Categories\Tables;
 
 use Filament\Tables\Table;
 use Filament\Actions\EditAction;

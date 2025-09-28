@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Filament\Resources\Products\Pages;
+namespace App\Filament\Clusters\Shop\Resources\Products\Pages;
 
-use App\Filament\Resources\Products\ProductResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use App\Filament\Clusters\Shop\Resources\Products\ProductResource;
+
+
 
 class ListProducts extends ListRecords
 {

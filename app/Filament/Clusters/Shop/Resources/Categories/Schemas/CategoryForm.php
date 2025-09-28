@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Resources\Categories\Schemas;
+namespace App\Filament\Clusters\Shop\Resources\Categories\Schemas;
 
 use Illuminate\Support\Str;
 use Filament\Schemas\Schema;

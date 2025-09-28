@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Filament\Resources\Products\Pages;
+namespace App\Filament\Clusters\Shop\Resources\Products\Pages;
 
-use App\Filament\Resources\Products\ProductResource;
 use Filament\Resources\Pages\CreateRecord;
+use App\Filament\Clusters\Shop\Resources\Products\ProductResource;
+
 
 class CreateProduct extends CreateRecord
 {

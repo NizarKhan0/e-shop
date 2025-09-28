@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Filament\Resources\Products\Pages;
+namespace App\Filament\Clusters\Shop\Resources\Products\Pages;
 
-use App\Filament\Resources\Products\ProductResource;
+
 use App\Models\Category;
-use Filament\Resources\Pages\Concerns\InteractsWithRecord;
 use Filament\Resources\Pages\Page;
+use Filament\Resources\Pages\Concerns\InteractsWithRecord;
+use App\Filament\Clusters\Shop\Resources\Products\ProductResource;
 
 class DetailProduct extends Page
 {

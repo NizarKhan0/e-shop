@@ -1,11 +1,15 @@
 <?php
 
-namespace App\Filament\Resources\Products\Pages;
+namespace App\Filament\Clusters\Shop\Resources\Products\Pages;
 
-use App\Filament\Resources\Products\ProductResource;
 use Filament\Actions\Action;
+use Filament\Actions\ViewAction;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
+use App\Filament\Clusters\Shop\Resources\Products\ProductResource;
+use App\Filament\Clusters\Shop\Resources\Products\Pages\DetailProduct;
+
+
 
 class EditProduct extends EditRecord
 {

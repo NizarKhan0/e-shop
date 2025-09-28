@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
         //         // Assign role untuk user dengan id = 1
         // $superadmin = User::find(1);
         // if ($superadmin) {
-        //     $superadmin->assignRole('superadmin');
+        //     $superadmin->assignRole('super-admin');
         // }
     }
 }

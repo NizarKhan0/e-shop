@@ -31,8 +31,9 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->font('Poppins')
             ->colors([
-                'primary' => Color::Blue,
+                'primary' => Color::Pink,
             ])
             ->brandName('CosMerch')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
@@ -72,7 +73,7 @@ class AdminPanelProvider extends PanelProvider
             //untuk sidebar collapsible
             ->sidebarCollapsibleOnDesktop()
             //size sidebar
-            ->sidebarWidth('20rem')
+            ->sidebarWidth('15rem')
             //spa mode
             //  ->collapsibleNavigationGroups(false)
             //sort navigation group
@@ -80,6 +81,7 @@ class AdminPanelProvider extends PanelProvider
                 'Settings',
                 'Manages',
             ])
+            // ->topNavigation()
             ->spa(hasPrefetching: true);
     }
 }
