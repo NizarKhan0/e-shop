@@ -75,6 +75,11 @@ class AdminPanelProvider extends PanelProvider
             ->sidebarWidth('20rem')
             //spa mode
             //  ->collapsibleNavigationGroups(false)
+            //sort navigation group
+            ->navigationGroups([
+                'Settings',
+                'Manages',
+            ])
             ->spa(hasPrefetching: true);
     }
 }

@@ -26,14 +26,14 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call([
-            RoleSeeder::class,
-            PermissionSeeder::class,
-            RolePermissionSeeder::class,
-            CategorySeeder::class,
-            UserSeeder::class,
-            ProductSeeder::class,
-        ]);
+        // $this->call([
+        //     RoleSeeder::class,
+        //     PermissionSeeder::class,
+        //     RolePermissionSeeder::class,
+        //     CategorySeeder::class,
+        //     UserSeeder::class,
+        //     ProductSeeder::class,
+        // ]);
 
         //         // Assign role untuk user dengan id = 1
         // $superadmin = User::find(1);

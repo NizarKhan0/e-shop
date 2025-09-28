@@ -3,17 +3,15 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Models\Order;
-use App\Models\Product;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, HasRoles;
+    use HasFactory, HasRoles, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -50,6 +48,41 @@ class User extends Authenticatable
     }
 
     // app/Models/User.php
-    public function products() { return $this->hasMany(Product::class); }
-    public function orders() { return $this->hasMany(Order::class); }
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    // Accessor untuk dapatkan single role
+    // public function getRoleAttribute(): ?Role
+    // {
+    //     return $this->roles->first();
+    // }
+
+    // // Mutator untuk set single role
+    // public function setRoleAttribute($role): void
+    // {
+    //     if ($role) {
+    //         $roleId = is_numeric($role) ? $role : $role->id;
+    //         $this->syncRoles([$roleId]);
+    //     } else {
+    //         $this->syncRoles([]);
+    //     }
+    // }
+
+    // // Convenience method
+    // public function getRoleIdAttribute(): ?int
+    // {
+    //     return $this->roles->first()?->id;
+    // }
+
+    // public function getRoleNameAttribute(): ?string
+    // {
+    //     return $this->roles->first()?->name;
+    // }
 }

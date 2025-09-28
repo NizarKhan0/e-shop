@@ -22,6 +22,10 @@ use App\Filament\Resources\Products\Schemas\ProductInfolist;
 
 class ProductResource extends Resource
 {
+    //     public static function canViewAny(): bool
+    // {
+    //     return auth()->user()->hasAnyRole(['superadmin', 'cosplayer']);
+    // }
     protected static ?string $cluster = ShopCluster::class;
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
     protected static ?string $model = Product::class;

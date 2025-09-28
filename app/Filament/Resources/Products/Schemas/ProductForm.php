@@ -25,8 +25,7 @@ class ProductForm
                     ->required(),
                 TextInput::make('slug')
                     ->unique(ignoreRecord: true)
-                    ->readonly()
-                    ->required(),
+                    ->readonly(),
                 Select::make('category_id')
                     ->label('Category')
                     ->relationship('category', 'name'),
